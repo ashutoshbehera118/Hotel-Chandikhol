@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Hotel Chandikhol</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+   <header class="site-header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+
+            <div class="logo-text">
+                <span>HOTEL</span>
+                <strong>CHANDIKHOL</strong>
+            </div>
+        </a>
+
+        <nav class="main-navigation" id="mainNavigation">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="owner.html" class="nav-link">Owner</a>
+                </li>
+
+                <li>
+                    <a href="offers.html" class="nav-link">Offers</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="nav-auth">
+                <a href="contact.html" class="nav-login">
+                    Contact Us
+                </a>
+            </div>
+
+        </nav>
+
+        <button
+            type="button"
+            class="mobile-menu"
+            id="mobileMenu"
+            aria-label="Open menu"
+            aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+    <main>
+
+
+        <!-- PAGE HERO -->
+
+        <section class="page-hero">
+
+            <div class="container page-hero-content">
+
+                <p class="section-label">
+                    OUR MOMENTS
+                </p>
+
+                <h1>
+                    Hotel <span>Gallery</span>
+                </h1>
+
+                <p>
+                    Explore our food, restaurant and special moments.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="gallery-section section">
+
+            <div class="container">
+
+
+                <!-- FILTER -->
+
+                <div class="gallery-filters">
+
+                    <button class="gallery-filter active"
+                        data-filter="all">
+                        All
+                    </button>
+
+                    <button class="gallery-filter"
+                        data-filter="food">
+                        Food
+                    </button>
+
+                    <button class="gallery-filter"
+                        data-filter="interior">
+                        Interior
+                    </button>
+
+                    <button class="gallery-filter"
+                        data-filter="restaurant">
+                        Restaurant
+                    </button>
+
+                    <button class="gallery-filter"
+                        data-filter="events">
+                        Events
+                    </button>
+
+                </div>
+
+
+                <!-- GALLERY GRID -->
+
+                <div class="gallery-grid">
+
+
+                    <div class="gallery-item"
+                        data-category="food">
+
+                        <img src="images/gallery/food-1.jpg"
+                            alt="Delicious food">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="food">
+
+                        <img src="images/gallery/food-2.jpg"
+                            alt="Restaurant food">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="food">
+
+                        <img src="images/gallery/food-3.jpg"
+                            alt="Special dish">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="interior">
+
+                        <img src="images/gallery/interior-1.jpg"
+                            alt="Hotel interior">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="interior">
+
+                        <img src="images/gallery/interior-2.jpg"
+                            alt="Restaurant interior">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="interior">
+
+                        <img src="images/gallery/interior-3.jpg"
+                            alt="Restaurant seating">
+
+                    </div>
+
+
+                    <!-- <div class="gallery-item"
+                        data-category="restaurant">
+
+                        <img src="images/gallery/restaurant-1.jpg"
+                            alt="Hotel Chandikhol">
+
+                    </div> -->
+
+
+                    <!-- <div class="gallery-item"
+                        data-category="restaurant">
+
+                        <img src="images/gallery/restaurant-2.jpg"
+                            alt="Restaurant exterior">
+
+                    </div> -->
+
+
+                    <!-- <div class="gallery-item"
+                        data-category="restaurant">
+
+                        <img src="images/gallery/restaurant-3.jpg"
+                            alt="Hotel restaurant">
+
+                    </div> -->
+
+
+                    <div class="gallery-item"
+                        data-category="events">
+
+                        <img src="images/gallery/event-1.jpg"
+                            alt="Hotel event">
+
+                    </div>
+
+
+                    <!-- <div class="gallery-item"
+                        data-category="events">
+
+                        <img src="images/gallery/event-2.jpg"
+                            alt="Restaurant event">
+
+                    </div> -->
+
+
+                    <div class="gallery-item"
+                        data-category="food">
+
+                        <img src="images/gallery/food-4.jpg"
+                            alt="Indian food">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="food">
+
+                        <img src="images/gallery/food-5.jpg"
+                            alt="Biryani">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="interior">
+
+                        <img src="images/gallery/interior-4.jpg"
+                            alt="Dining area">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="events">
+
+                        <img src="images/gallery/event-3.jpg"
+                            alt="Special event">
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                        data-category="restaurant">
+
+                        <img src="images/gallery/restaurant-4.jpg"
+                            alt="Hotel Chandikhol">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INSTAGRAM -->
+
+        <section class="social-section section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        FOLLOW OUR JOURNEY
+                    </p>
+
+                    <h2>
+                        More Photos On
+                        <span>Instagram</span>
+                    </h2>
+
+                </div>
+
+
+                <a href="https://www.instagram.com/hotel.chandikhol/"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    Visit Instagram
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <button class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Previous image">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <img id="lightboxImage"
+            src=""
+            alt="Gallery image">
+
+
+        <button class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Next image">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="index.html" class="footer-logo">
+                    HOTEL CHANDIKHOL
+                </a>
+
+                <p>
+                    Delicious food, warm hospitality and memorable
+                    moments in Chandikhol.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Chandikhol, Odisha
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 99999 99999
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Hotel Chandikhol. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+
+</html>

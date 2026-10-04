@@ -1,0 +1,149 @@
+.menu-search {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    position: relative;
+}
+
+.menu-search input {
+    width: 100%;
+    padding: 17px 50px 17px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.menu-search i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+.menu-category {
+    border: 1px solid #ddd;
+    background: white;
+    color: var(--text);
+    padding: 11px 20px;
+    border-radius: 50px;
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu-category:hover,
+.menu-category.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    transition: var(--transition);
+    animation: menuAppear .5s ease both;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.menu-item-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.menu-item-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.08);
+}
+
+.menu-item-content {
+    padding: 22px;
+}
+
+.menu-item-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.menu-item-content p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.menu-price {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#noResults {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    color: var(--text-light);
+}
+
+@keyframes menuAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-categories {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 8px;
+    }
+
+    .menu-category {
+        flex: 0 0 auto;
+    }
+}
