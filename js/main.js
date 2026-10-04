@@ -340,7 +340,8 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
 
             // const response = await fetch("/api/contact", {
-            const response = await fetch("http://localhost:5000/api/contact", {
+            // const response = await fetch("http://localhost:5000/api/contact", {
+            const response = await fetch("https://hotel-chandikhol.onrender.com/api/contact", {
 
                 method: "POST",
 
