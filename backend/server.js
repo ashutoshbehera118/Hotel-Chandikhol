@@ -15,10 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
     origin: [
-        "http://127.0.0.1:5500",
-       
+        "http://127.0.0.1:5500",       
         "http://localhost:5500",
-        "https://hotel-chandikhol-seven.vercel.app/",
+        "https://hotel-chandikhol-seven.vercel.app",
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
